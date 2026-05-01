@@ -1,4 +1,4 @@
-"""MIMO CLI — Cross-border E-commerce Multilingual Marketing Content Factory."""
+"""CLI for the Cross-border E-commerce Multilingual Marketing Content Factory."""
 
 import asyncio
 import sys
@@ -20,9 +20,9 @@ console = Console()
 
 
 @click.group()
-@click.version_option(version="0.1.0", prog_name="mimo")
+@click.version_option(version="0.1.0", prog_name="mcf")
 def cli():
-    """MIMO — Multilingual Marketing Content Factory for Cross-border E-commerce.
+    """Multilingual Marketing Content Factory for Cross-border E-commerce.
 
     Transforms Chinese product data + images into SEO-optimized, culturally adapted
     marketing copy for Amazon, Shopify, TikTok, and more across 8 languages.
@@ -86,7 +86,7 @@ def run(product, specs, price, features, category, brand, images, locales, platf
         f"[bold]Locales:[/bold] {', '.join(locale_list) or 'all (8)'}\n"
         f"[bold]Platforms:[/bold] {', '.join(platform_list) or 'all (3)'}\n"
         f"[bold]Mode:[/bold] {'Dry run (no publish)' if dry_run else 'Full pipeline'}",
-        title="MIMO Content Factory",
+        title="Marketing Content Factory",
         border_style="cyan",
     ))
 

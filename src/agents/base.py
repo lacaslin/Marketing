@@ -13,7 +13,7 @@ from src.utils.logger import log
 
 
 class BaseAgent(ABC):
-    """Abstract base for all MIMO agents with shared LLM capabilities."""
+    """Abstract base for all content factory agents with shared LLM capabilities."""
 
     def __init__(
         self,

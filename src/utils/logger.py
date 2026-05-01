@@ -11,7 +11,7 @@ from rich.logging import RichHandler
 console = Console()
 
 
-def setup_logger(name: str = "mimo", level: str = "INFO", log_file: str | None = None) -> logging.Logger:
+def setup_logger(name: str = "mcf", level: str = "INFO", log_file: str | None = None) -> logging.Logger:
     logger = logging.getLogger(name)
     logger.setLevel(getattr(logging, level.upper(), logging.INFO))
     logger.handlers.clear()

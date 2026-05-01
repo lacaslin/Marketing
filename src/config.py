@@ -20,7 +20,7 @@ def _load_yaml(path: Path) -> dict[str, Any]:
 
 
 class Config:
-    """MIMO configuration loaded from YAML + environment variables."""
+    """Configuration loaded from YAML + environment variables."""
 
     def __init__(self, config_path: Path | None = None):
         self._data = _load_yaml(config_path or DEFAULT_CONFIG_PATH)

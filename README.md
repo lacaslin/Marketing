@@ -1,4 +1,4 @@
-# MIMO — Multilingual Marketing Content Factory
+# Multilingual Marketing Content Factory
 
 Cross-border e-commerce multi-agent system that transforms Chinese product data + images into SEO-optimized, culturally adapted marketing copy across 8 languages and 3 platforms.
 
@@ -98,7 +98,7 @@ Output files are saved to `./output/` by default:
 ## Project Structure
 
 ```
-xiaomi-mimo/
+marketing-content-factory/
 ├── src/
 │   ├── main.py              # CLI entry point (Click + Rich)
 │   ├── orchestrator.py      # 5-stage pipeline coordinator

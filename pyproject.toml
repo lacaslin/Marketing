@@ -3,14 +3,14 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "xiaomi-mimo"
+name = "marketing-content-factory"
 version = "0.1.0"
 description = "Cross-border E-commerce Multilingual Marketing Content Factory - Multi-Agent System"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "MIMO Team"}
+    {name = "Marketing Team"}
 ]
 dependencies = [
     "anthropic>=0.39.0",
@@ -32,7 +32,7 @@ dev = [
 ]
 
 [project.scripts]
-mimo = "src.main:cli"
+mcf = "src.main:cli"
 
 [tool.setuptools.packages.find]
 where = ["."]

@@ -1,4 +1,4 @@
-"""Product-related data models for the MIMO pipeline."""
+"""Product-related data models for the content factory pipeline."""
 
 from pydantic import BaseModel, Field
 

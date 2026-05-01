@@ -1,4 +1,4 @@
-"""Content asset data models for the MIMO pipeline."""
+"""Content asset data models for the content factory pipeline."""
 
 from datetime import datetime
 from enum import Enum

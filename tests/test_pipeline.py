@@ -1,4 +1,4 @@
-"""Tests for the MIMO content factory pipeline."""
+"""Tests for the content factory pipeline."""
 
 import json
 import os
