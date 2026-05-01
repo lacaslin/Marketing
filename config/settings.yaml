@@ -1,0 +1,57 @@
+# MIMO - Multilingual Marketing Content Factory Configuration
+
+# Supported target languages
+languages:
+  fr: French
+  de: German
+  es: Spanish
+  ja: Japanese
+  ko: Korean
+  pt: Portuguese
+  it: Italian
+  ar: Arabic
+
+# Supported platforms and their content formats
+platforms:
+  amazon:
+    max_title_chars: 200
+    max_bullets: 5
+    max_description_chars: 2000
+    max_search_terms_chars: 500
+  shopify:
+    max_title_chars: 70
+    max_description_chars: 5000
+  tiktok:
+    max_caption_chars: 2200
+    max_hashtags: 30
+
+# Agent model configuration
+agents:
+  understander:
+    model: claude-sonnet-4-6
+    max_tokens: 2000
+    temperature: 0.3
+  copywriter:
+    model: claude-opus-4-7
+    max_tokens: 4096
+    temperature: 0.7
+  localizer:
+    model: claude-sonnet-4-6
+    max_tokens: 3000
+    temperature: 0.6
+  reviewer:
+    model: claude-sonnet-4-6
+    max_tokens: 1500
+    temperature: 0.2
+
+# Retry settings
+retry:
+  max_retries: 3
+  backoff_factor: 2.0
+  initial_delay_seconds: 1.0
+
+# Brand default guidelines
+brand_defaults:
+  tone: "professional yet approachable"
+  target_audience: "global online shoppers aged 18-45"
+  value_proposition_focus: "quality, innovation, value"
